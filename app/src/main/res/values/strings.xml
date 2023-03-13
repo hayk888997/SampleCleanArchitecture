@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FibonacciNumberGenerator</string>
+
+    <string name="btn_generate">Generate a new number</string>
+    <string name="tv_hint_fib_number">Your new number here</string>
+
+</resources>

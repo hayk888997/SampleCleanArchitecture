@@ -9,14 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fibonaccinumbergenerator.R
 import com.example.fibonaccinumbergenerator.databinding.FibonacciNumberItemBinding
 import com.example.fibonaccinumbergenerator.feature_generator.domain.model.FibonacciNumber
-import com.example.fibonaccinumbergenerator.feature_generator.presentation.util.viewBinding
+import com.example.fibonaccinumbergenerator.common.util.viewBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
 class FibonacciNumbersAdapter :
     ListAdapter<FibonacciNumber, FibonacciNumbersAdapter.ViewHolder>(DiffCallback()) {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context)
@@ -44,7 +43,7 @@ class FibonacciNumbersAdapter :
             oldItem: FibonacciNumber,
             newItem: FibonacciNumber
         ): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem == newItem
         }
 
         override fun areContentsTheSame(

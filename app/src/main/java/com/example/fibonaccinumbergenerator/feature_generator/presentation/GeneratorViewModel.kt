@@ -50,7 +50,6 @@ class GeneratorViewModel(
                 _state.value = state.value.copy(
                     history = history
                 )
-            }
-            .launchIn(viewModelScope)
+            }.launchIn(viewModelScope)
     }
 }

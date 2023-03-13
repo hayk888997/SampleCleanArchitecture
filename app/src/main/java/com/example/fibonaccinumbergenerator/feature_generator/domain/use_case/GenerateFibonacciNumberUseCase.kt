@@ -10,7 +10,8 @@ class GenerateFibonacciNumberUseCase(
 ) {
     @Throws(InvalidFibonacciNumberException::class)
     suspend operator fun invoke(): FibonacciNumber {
-        val newFibonacciNumber = FibonacciNumber(generateRandomFibonacciNumber(), System.currentTimeMillis())
+        val newFibonacciNumber =
+            FibonacciNumber(generateRandomFibonacciNumber(), System.currentTimeMillis())
         repository.insertFibonacciNumber(newFibonacciNumber)
         return newFibonacciNumber
     }

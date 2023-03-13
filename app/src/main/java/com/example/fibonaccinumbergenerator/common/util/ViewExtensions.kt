@@ -1,4 +1,4 @@
-package com.example.fibonaccinumbergenerator.feature_generator.presentation.util
+package com.example.fibonaccinumbergenerator.common.util
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

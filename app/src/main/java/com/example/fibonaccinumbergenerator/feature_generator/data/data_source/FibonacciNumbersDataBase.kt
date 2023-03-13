@@ -2,10 +2,10 @@ package com.example.fibonaccinumbergenerator.feature_generator.data.data_source
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.fibonaccinumbergenerator.feature_generator.domain.model.FibonacciNumber
+import com.example.fibonaccinumbergenerator.feature_generator.data.model.FibonacciNumberRoom
 
 @Database(
-    entities = [FibonacciNumber::class],
+    entities = [FibonacciNumberRoom::class],
     version = 1
 )
 abstract class FibonacciNumbersDataBase : RoomDatabase() {

@@ -4,8 +4,6 @@ import com.example.fibonaccinumbergenerator.feature_generator.domain.model.Fibon
 import kotlinx.coroutines.flow.Flow
 
 interface FibonacciNumberRepository {
-
-    fun getFibonacciNumbers() : Flow<List<FibonacciNumber>>
-
+    fun getFibonacciNumbers(): Flow<List<FibonacciNumber>>
     suspend fun insertFibonacciNumber(fibonacciNumber: FibonacciNumber)
 }
